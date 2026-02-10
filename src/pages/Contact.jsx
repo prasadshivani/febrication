@@ -6,7 +6,7 @@ const Contact = () => {
       {/* HERO */}
       <section className="py-20 lg:py-32 bg-gradient-to-br from-black via-gray-900 to-gray-950 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-gradient-to-r from-gray-800/20 to-transparent" />
-        
+
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h1 className="text-5xl lg:text-7xl font-black mb-6 text-white drop-shadow-2xl">
             <span className="bg-gradient-to-r from-gray-400 via-gray-200 to-gray-500 bg-clip-text text-transparent">
@@ -36,7 +36,8 @@ const Contact = () => {
                     </span>
                   </h3>
                   <p className="text-gray-500 mb-10 text-base lg:text-lg leading-relaxed opacity-90">
-                    We are available for residential, commercial and industrial fabrication and sliding work. Feel free to contact us.
+                    We are available for residential, commercial and industrial
+                    fabrication and sliding work. Feel free to contact us.
                   </p>
                 </div>
 
@@ -47,48 +48,75 @@ const Contact = () => {
                         <span className="text-2xl">📍</span>
                       </div>
                       <div>
-                        <strong className="block text-white mb-2 font-bold text-base lg:text-lg">Address</strong>
-                        <p className="text-gray-500 mb-0 leading-relaxed">Shop no.03, Madhav mahal building,near Kedney care hospital, Chulna bhabola road, vasai west.<br/><span className="text-gray-400">Serving Vasai-Virar & entire Maharashtra</span></p>
+                        <strong className="block text-white mb-2 font-bold text-base lg:text-lg">
+                          Address
+                        </strong>
+                        <p className="text-gray-500 mb-0 leading-relaxed">
+                          Shop no.03, Madhav mahal building,near Kedney care
+                          hospital, Chulna bhabola road, vasai west.
+                          <br />
+                          <span className="text-gray-400">
+                            Serving Vasai-Virar & entire Maharashtra
+                          </span>
+                        </p>
                       </div>
                     </div>
                   </li>
-                 
+
                   <li className="group">
                     <div className="flex items-start mb-3">
                       <div className="bg-gradient-to-r from-gray-800 to-gray-700 p-3 rounded-2xl shadow-xl mr-4 flex-shrink-0 group-hover:scale-110 transition-all duration-400">
                         <span className="text-2xl">📞</span>
                       </div>
                       <div>
-                        <strong className="block text-white mb-2 font-bold text-base lg:text-lg">Phone</strong>
-                        <a href="tel:+919970554276" className="text-gray-400 hover:text-white font-semibold text-lg block transition-colors">
+                        <strong className="block text-white mb-2 font-bold text-base lg:text-lg">
+                          Phone
+                        </strong>
+                        <a
+                          href="tel:+919970554276"
+                          className="text-gray-400 hover:text-white font-semibold text-lg block transition-colors"
+                        >
                           +91 9970554276
                         </a>
                       </div>
                     </div>
                   </li>
-                 
+
                   <li className="group">
                     <div className="flex items-start mb-3">
                       <div className="bg-gradient-to-r from-gray-800 to-gray-700 p-3 rounded-2xl shadow-xl mr-4 flex-shrink-0 group-hover:scale-110 transition-all duration-400">
                         <span className="text-2xl">✉</span>
                       </div>
                       <div>
-                        <strong className="block text-white mb-2 font-bold text-base lg:text-lg">Email</strong>
-                        <a href="mailto:bbaliramprasad014@gmail.com" className="text-gray-400 hover:text-white font-semibold text-base lg:text-lg block transition-colors break-all">
+                        <strong className="block text-white mb-2 font-bold text-base lg:text-lg">
+                          Email
+                        </strong>
+                        <a
+                          href="mailto:bbaliramprasad014@gmail.com"
+                          className="text-gray-400 hover:text-white font-semibold text-base lg:text-lg block transition-colors break-all"
+                        >
                           bbaliramprasad014@gmail.com
                         </a>
                       </div>
                     </div>
                   </li>
-                 
+
                   <li className="group">
                     <div className="flex items-start">
                       <div className="bg-gradient-to-r from-gray-800 to-gray-700 p-3 rounded-2xl shadow-xl mr-4 flex-shrink-0 group-hover:scale-110 transition-all duration-400">
                         <span className="text-2xl">🕒</span>
                       </div>
                       <div>
-                        <strong className="block text-white mb-2 font-bold text-base lg:text-lg">Working Hours</strong>
-                        <p className="text-gray-500 mb-0 leading-relaxed">Mon – Sat<br/><span className="text-gray-400 font-semibold text-lg">9:00 AM – 7:00 PM</span></p>
+                        <strong className="block text-white mb-2 font-bold text-base lg:text-lg">
+                          Working Hours
+                        </strong>
+                        <p className="text-gray-500 mb-0 leading-relaxed">
+                          Mon – Sat
+                          <br />
+                          <span className="text-gray-400 font-semibold text-lg">
+                            9:00 AM – 7:00 PM
+                          </span>
+                        </p>
                       </div>
                     </div>
                   </li>
@@ -149,8 +177,18 @@ const Contact = () => {
                     className="w-full inline-flex px-6 py-2.5 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 text-white font-bold text-sm rounded-xl shadow-lg hover:shadow-gray-600/50 hover:scale-105 hover:-translate-y-0.5 transition-all duration-300 border border-gray-700/50 items-center justify-center gap-1.5 group relative overflow-hidden self-start"
                   >
                     <span className="relative z-10 flex items-center gap-1.5">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                        />
                       </svg>
                       Send Message
                     </span>
@@ -179,7 +217,9 @@ const Contact = () => {
             </div>
           </div>
           <div className="text-center mt-8">
-            <p className="text-gray-500 text-lg mb-0">📍 Serving Vasai, Virar & entire Maharashtra</p>
+            <p className="text-gray-500 text-lg mb-0">
+              📍 Serving Vasai, Virar & entire Maharashtra
+            </p>
           </div>
         </div>
       </section>
