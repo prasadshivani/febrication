@@ -136,21 +136,6 @@ const Navbar = () => {
                 Gallery
               </NavLink>
             </li>
-
-            <li>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  `px-4 py-2 text-lg font-semibold rounded-lg transition-all duration-200 ${
-                    isActive
-                      ? "text-yellow-400 bg-yellow-400/10 border-b-2 border-yellow-400"
-                      : "text-gray-300 hover:text-white hover:bg-gray-800"
-                  }`
-                }
-              >
-                Contact
-              </NavLink>
-            </li>
           </ul>
 
           {/* CTA Button */}
