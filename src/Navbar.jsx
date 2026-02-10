@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import image from "./assets/image1/image.jpeg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,12 +16,12 @@ const Navbar = () => {
           {/* Logo */}
           <NavLink
             to="/"
-            className="flex items-center gap-3 font-bold text-xl text-white hover:text-yellow-400 transition-colors"
+            className="flex items-center gap-2 font-bold text-xl text-white hover:text-yellow-400 transition-colors" // Reduced gap
           >
             <img
-              src="https://www.shutterstock.com/image-vector/steel-fabrication-logo-design-welding-600w-2629839931.jpg"
+              src={image} // Ensure high-res PNG: import logoPng from "./assets/logo.png";
               alt="Gupta Fabrication"
-              className="h-12 w-16 lg:h-14 lg:w-20 object-contain rounded-lg shadow-md"
+              className="h-16 w-24 lg:h-20 lg:w-32 object-contain rounded-lg shadow-md self-center [image-rendering:-webkit-optimize-contrast] [image-rendering:crisp-edges] select-none"
             />
             <span className="hidden lg:inline">Gupta Fabrication</span>
           </NavLink>
