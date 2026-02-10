@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
 import Quotation from "./pages/Quotation";
 import StoreContext from "./StoreContext";
 import AboutUs from "./pages/AboutUs";
@@ -21,7 +20,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/quotation" element={<Quotation />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/products" element={<Products />} />
