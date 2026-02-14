@@ -12,16 +12,16 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex justify-between items-center py-4 lg:py-3">
+        <div className="flex flex-wrap items-center justify-between py-4 lg:py-3">
           {/* Logo */}
           <NavLink
             to="/"
-            className="flex items-center gap-2 font-bold text-xl text-white hover:text-yellow-400 transition-colors" // Reduced gap
+            className="flex items-center gap-2 font-bold text-xl text-white hover:text-yellow-400 transition-colors"
           >
             <img
-              src={image} // Ensure high-res PNG: import logoPng from "./assets/logo.png";
+              src={image}
               alt="Gupta Fabrication"
-              className="h-16 w-24 lg:h-20 lg:w-32 object-contain rounded-lg shadow-md self-center [image-rendering:-webkit-optimize-contrast] [image-rendering:crisp-edges] select-none"
+              className="h-12 w-20 sm:h-14 sm:w-24 lg:h-20 lg:w-32 object-contain rounded-lg shadow-md self-center [image-rendering:-webkit-optimize-contrast] [image-rendering:crisp-edges] select-none"
             />
             <span className="hidden lg:inline">Gupta Fabrication</span>
           </NavLink>
@@ -30,9 +30,10 @@ const Navbar = () => {
           <button
             className="lg:hidden p-2 rounded-lg hover:bg-gray-800 transition-colors"
             onClick={toggleNavbar}
+            aria-label="Toggle menu"
           >
             <svg
-              className={`w-6 h-6 transition-all ${isOpen ? "rotate-180" : ""}`}
+              className={`w-6 h-6 transition-all duration-300 ${isOpen ? "rotate-180" : ""}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -47,7 +48,7 @@ const Navbar = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <ul className="hidden lg:flex items-center space-x-8 ml-auto">
+          <ul className="hidden lg:flex xl:space-x-10 items-center ml-auto">
             <li>
               <NavLink
                 to="/"
@@ -69,7 +70,7 @@ const Navbar = () => {
                 <span className="px-4 py-2 text-lg font-semibold text-gray-300 cursor-pointer group-hover:text-white transition-colors flex items-center gap-1">
                   About Us
                   <svg
-                    className="w-4 h-4 group-hover:rotate-180 transition-transform"
+                    className="w-4 h-4 group-hover:rotate-180 transition-transform duration-200"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -84,7 +85,7 @@ const Navbar = () => {
                 </span>
               </NavLink>
               {/* Dropdown Menu */}
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-gray-800/95 backdrop-blur-md border border-gray-700 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-3">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-gray-800/95 backdrop-blur-md border border-gray-700 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3">
                 {[
                   "Steel Fabrication",
                   "Sliding Windows",
@@ -95,10 +96,10 @@ const Navbar = () => {
                   <NavLink
                     key={index}
                     to="#"
-                    className="block px-6 py-3 text-gray-300 hover:text-yellow-400 hover:bg-gray-700/50 transition-all duration-200 text-sm font-medium flex items-center gap-3 rounded-xl mx-2"
+                    className="block px-6 py-3 text-gray-300 hover:text-yellow-400 hover:bg-gray-700/50 transition-all duration-200 text-sm font-medium flex items-center gap-3 rounded-xl mx-2 first:mt-1 last:mb-1"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <span className="text-xl opacity-80">
+                    <span className="text-xl opacity-80 flex-shrink-0">
                       {["🔥", "🚪", "🚪", "🚪", "⚙️"][index]}
                     </span>
                     {service}
@@ -141,7 +142,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <NavLink
             to="/quotation"
-            className="hidden lg:inline-flex ml-6 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+            className="hidden lg:inline-flex ml-6 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 font-bold text-lg px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-yellow-300"
             onClick={() => setIsOpen(false)}
           >
             Get a Quote
@@ -150,7 +151,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="lg:hidden border-t border-gray-800 pb-8 pt-4">
+          <div className="lg:hidden border-t border-gray-800 pb-8 pt-4 animate-in slide-in-from-top-4 duration-200">
             <div className="space-y-4 px-4">
               <NavLink
                 to="/"
@@ -187,7 +188,7 @@ const Navbar = () => {
                         setIsOpen(false);
                       }}
                     >
-                      <span className="text-lg">
+                      <span className="text-lg flex-shrink-0">
                         {["🔥", "🚪", "🚪", "🚪", "⚙️"][index]}
                       </span>
                       {service}
@@ -240,7 +241,7 @@ const Navbar = () => {
 
               <NavLink
                 to="/quotation"
-                className="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl py-5 px-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 mt-6"
+                className="block w-full text-center bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 font-bold text-xl py-5 px-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 mt-6 focus:outline-none focus:ring-4 focus:ring-yellow-300"
                 onClick={() => setIsOpen(false)}
               >
                 Get a Quote
